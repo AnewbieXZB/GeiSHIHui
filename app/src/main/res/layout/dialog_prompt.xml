@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="250dp"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:padding="30dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="200sp">
+
+        <TextView
+            android:id="@+id/tv_ti"
+            android:text="提示"
+            android:layout_marginLeft="6sp"
+            android:layout_marginTop="6sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="保存成功"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/tv_ti"
+            android:layout_alignStart="@+id/tv_ti" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:text="确定"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6sp"
+            android:layout_marginBottom="6sp"/>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

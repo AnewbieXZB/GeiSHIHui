@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/imv_item_collect_pic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/tv_item_intergral_goods_title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"/>
+
+        <TextView
+            android:text="所需积分"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_item_intergral_goods_title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_item_intergral_goods_suoxujifen"
+            android:textSize="16dp"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/red"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/tv_item_intergral_goods_suoxujifen"
+            android:layout_alignBottom="@+id/tv_item_intergral_goods_suoxujifen"
+            android:id="@+id/tv_item_intergral_goods_intergral" />
+
+        <TextView
+            android:text="剩余"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:id="@+id/tv_intergral_goods_shengyu" />
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_intergral_goods_shengyu"
+            android:layout_alignBottom="@+id/tv_intergral_goods_shengyu"
+            android:id="@+id/tv_intergral_goods_surplus" />
+
+        <TextView
+            android:text="件"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_intergral_goods_surplus"
+            android:layout_alignBottom="@+id/tv_intergral_goods_surplus" />
+
+        <TextView
+            android:text="包邮"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/tv_intergral_goods_shengyu" />
+
+
+    </RelativeLayout>
+</LinearLayout>

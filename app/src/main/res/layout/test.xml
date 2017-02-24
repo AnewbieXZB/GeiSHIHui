@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_goods_details_top">
+
+        <!--<ImageView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:id="@+id/imv_goods_details_back"-->
+            <!--android:src="@drawable/back_"-->
+            <!--android:paddingLeft="5dp" />-->
+
+        <TextView
+            android:text="商品详情"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rl_goods_details_bottom">
+
+        <TextView
+            android:text="立刻购买"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tv_goods_details_toTaobao"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:background="@color/red"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:text="立刻领券"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_goods_details_toTaobao"
+            android:id="@+id/tv_goods_details_toQuan"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:background="@color/yellow"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:text="券后价:"
+            android:id="@+id/tv_goods_details_quanhoujia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp" />
+
+        <TextView
+            android:text="¥"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_goods_details_quanhoujia"
+            android:layout_toEndOf="@+id/tv_goods_details_quanhoujia"
+            android:id="@+id/tv_goods_details_quan"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="30dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/tv_goods_details_quan"
+            android:layout_toEndOf="@+id/tv_goods_details_quan"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="14dp">
+
+            <TextView
+                android:id="@+id/tv_goods_details_yuanjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原价："
+                android:textColor="@color/darkgray"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_goods_details_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_goods_details_yuanjia"
+                android:layout_toRightOf="@id/tv_goods_details_yuanjia"
+                android:text="￥"
+                android:textColor="@color/darkgray"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignRight="@id/tv_goods_details_price"
+                android:layout_centerVertical="true"
+                android:background="@color/darkgray" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sc_goods_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_goods_details_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/rl_goods_details_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imv_goods_details_picture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pictures_err"
+                android:scaleType="fitXY"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imv_goods_details_platform"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/pictures_err"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_goods_details_title"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:layout_toRightOf="@+id/imv_goods_details_platform"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:text="你可能喜欢"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_goods_details_tuijian"
+                    android:textSize="22dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/gold" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_toRightOf="@+id/tv_goods_details_tuijian"
+                    android:layout_centerVertical="true"
+                    android:background="@color/gold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+  	<!--<item android:state_checked="false" android:drawable="@drawable/check_box_bg_default" />-->
+    <!--<item android:state_checked="true" android:drawable="@drawable/check_box_bg_checked" />-->
+
+    <!--<item android:state_checked="false" android:drawable="@drawable/check_box_bg_default2" />-->
+    <!--<item android:state_checked="true" android:drawable="@drawable/check_box_bg_checked2" />-->
+
+    <!--<item android:state_checked="false" android:drawable="@drawable/check_box_bg_default5" />-->
+    <!--<item android:state_checked="true" android:drawable="@drawable/check_box_bg_checked5" />-->
+
+    <item android:state_checked="false" android:drawable="@drawable/check_box_bg_default6" />
+    <item android:state_checked="true" android:drawable="@drawable/check_box_bg_checked6" />
+
+    <!--<item android:state_checked="false" android:drawable="@drawable/check_box_bg_default7" />-->
+    <!--<item android:state_checked="true" android:drawable="@drawable/check_box_bg_checked7" />-->
+    <!--<item android:state_checked="false" android:drawable="@drawable/check_box_bg_default8" />-->
+    <!--<item android:state_checked="true" android:drawable="@drawable/check_box_bg_checked8" />-->
+</selector>

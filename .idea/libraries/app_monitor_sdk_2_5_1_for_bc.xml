@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="app-monitor-sdk-2.5.1_for_bc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.alibaba.mtl/app-monitor-sdk/2.5.1_for_bc/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.alibaba.mtl/app-monitor-sdk/2.5.1_for_bc/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

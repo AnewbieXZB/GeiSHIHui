@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_line">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.example.s.why_no.view.BanScrollViewPager
+                android:id="@+id/vp_fragment_main_advertisement"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:background="@color/white">
+            </com.example.s.why_no.view.BanScrollViewPager>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/ll_fragment_main_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="10sp">
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+            android:background="@android:color/white">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/fragment_main_category_ornaments"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:padding="9dp"
+                    android:src="@drawable/category_nine"/>
+
+                <TextView
+                    android:textColor="#808080"
+                    android:text="9.9包邮"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/fragment_main_category_other"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:padding="9dp"
+                    android:src="@drawable/category_tw"/>
+
+                <TextView
+                    android:textColor="#808080"
+                    android:text="20封顶"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/fragment_main_category_clothes"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:padding="9dp"
+                    android:src="@drawable/category_clothes"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"/>
+
+                <TextView
+                    android:textColor="#808080"
+                    android:text="服装"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/fragment_main_category_baby"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:padding="9dp"
+                    android:src="@drawable/category_baby"/>
+
+                <TextView
+                    android:textColor="#808080"
+                    android:text="母婴"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/fragment_main_category_beauty"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:padding="9dp"
+                    android:src="@drawable/category_beauty"/>
+
+                <TextView
+                    android:textColor="#808080"
+                    android:text="化妆品"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+            android:background="@color/white"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/fragment_main_category_home"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:padding="9dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/category_home"/>
+
+                <TextView
+                    android:textColor="#808080"
+                    android:text="居家日用"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/fragment_main_category_shoes"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:padding="9dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/category_shoes"/>
+
+                <TextView
+                    android:textColor="#808080"
+                    android:text="鞋包配饰"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/fragment_main_category_food"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:padding="9dp"
+                    android:src="@drawable/category_food"/>
+
+                <TextView
+                    android:textColor="#808080"
+                    android:text="美食"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+
+                <ImageView
+                    android:id="@+id/fragment_main_category_stationery"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:padding="9dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/category_ornaments"/>
+
+                <TextView
+                    android:textColor="#808080"
+                    android:text="文体车品"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/fragment_main_category_digital"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="3"
+                    android:padding="9dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:src="@drawable/category_digital"/>
+
+                <TextView
+                    android:textColor="#808080"
+                    android:text="数码家电"
+                    android:gravity="center"
+                    android:textSize="11dp"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

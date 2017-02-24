@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pictures_err"
+        android:id="@+id/imv_item_pic"
+        android:scaleType="fitStart" />
+
+    <TextView
+        android:text="小编推荐"
+        android:layout_width="26dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_item_today_new"
+        android:gravity="center"
+        android:textSize="9dp"
+        android:padding="1dp"
+        android:background="#7ad3c1"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_quan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imv_item_pic"
+        android:layout_alignEnd="@+id/imv_item_pic"
+        android:background="#f0215b" >
+
+        <TextView
+            android:text="独家券"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:textSize="9dp"
+            android:gravity="center"
+            android:textColor="#EDFF00"
+            />
+        <TextView
+            android:text="xx元"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_quan"
+            android:textSize="11dp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+    <TextView
+
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_item_title"
+        android:textColor="#777777"
+        android:layout_below="@+id/imv_item_pic"
+        android:layout_alignLeft="@+id/imv_item_pic"
+        android:layout_alignStart="@+id/imv_item_pic"
+        android:layout_alignRight="@+id/ll_item_quan"
+        android:layout_alignEnd="@+id/ll_item_quan"
+        android:layout_marginTop="4dp"
+        android:lines="1"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_temp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_title"
+        android:layout_alignLeft="@+id/tv_item_title"
+        android:layout_alignStart="@+id/tv_item_title"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="券后"
+            android:textSize="12dp"
+            android:textColor="#a3a3a3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_jiage" />
+
+        <TextView
+            android:layout_marginLeft="2dp"
+            android:text="¥"
+            android:textColor="#ff4b5f"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_item_price" />
+    </LinearLayout>
+    <!--<TextView-->
+        <!--android:text="券后"-->
+        <!--android:textSize="12dp"-->
+        <!--android:textColor="#a3a3a3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_item_title"-->
+        <!--android:layout_alignLeft="@+id/tv_item_title"-->
+        <!--android:layout_alignStart="@+id/tv_item_title"-->
+        <!--android:layout_marginTop="13dp"-->
+        <!--android:id="@+id/tv_item_jiage" />-->
+
+    <!--<TextView-->
+        <!--android:text="¥"-->
+        <!--android:textColor="#ff4b5f"-->
+        <!--android:textSize="12dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toEndOf="@+id/tv_item_jiage"-->
+        <!--android:id="@+id/tv_item_price"-->
+        <!--android:layout_toRightOf="@+id/tv_item_jiage"-->
+        <!--android:layout_marginLeft="3dp"-->
+        <!--android:layout_alignBottom="@+id/tv_item_jiage"/>-->
+    <!---->
+
+    <LinearLayout
+
+
+        android:id="@+id/ll_default"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_item_title"
+        android:layout_alignRight="@+id/tv_item_title"
+        android:layout_alignEnd="@+id/tv_item_title"
+        android:layout_alignBottom="@+id/ll_temp"
+        android:layout_marginTop="3dp"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:text="销售量"
+            android:textSize="10dp"
+            android:textColor="#B5B5B5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ll_temp"
+            android:layout_toLeftOf="@+id/tv_item_volume"
+            android:layout_toStartOf="@+id/tv_item_volume"
+            android:id="@+id/tv_item_xiaoliang"
+            android:layout_marginRight="1dp"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:text="0"
+        android:textColor="#ecabab"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ll_temp"
+        android:layout_alignRight="@+id/imv_item_pic"
+        android:layout_alignEnd="@+id/imv_item_pic"
+        android:id="@+id/tv_item_volume" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

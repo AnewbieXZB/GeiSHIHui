@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:paddingBottom="20sp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_pop_text"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            style="@style/about_text_pop_menu"
+            android:background="@drawable/pop_first_selector"
+            android:text="你确定要退出？"
+            android:textSize="13sp"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/bt_pop_sure"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            style="@style/about_sure_pop_menu"
+            android:background="@drawable/pop_last_selector"
+            android:text="确定"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_pop_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            style="@style/about_cancel_pop_menu"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pop_single_selector"
+            android:text="消除"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

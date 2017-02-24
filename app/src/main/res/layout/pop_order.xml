@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/pop_order_default"
+            android:textColor="#000000"
+            android:text="默认"
+            android:textSize="14dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/pop_order_roll_asc"
+            android:textColor="#000000"
+            android:text="价格从低到高"
+            android:textSize="14dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/pop_order_roll_desc"
+            android:textColor="#000000"
+            android:text="价格从高到低"
+            android:textSize="14dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/pop_order_volum_des"
+            android:textColor="#000000"
+            android:text="销量从高到低"
+            android:textSize="14dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/pop_order_volum_ace"
+            android:textColor="#000000"
+            android:text="销量从低到高"
+            android:textSize="14dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

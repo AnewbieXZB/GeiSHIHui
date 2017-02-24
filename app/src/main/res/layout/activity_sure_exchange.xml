@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_sure_exchange_top"
+        android:background="@color/color_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/imv_sure_exchange_back"
+            android:src="@drawable/back_"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:text="填写订单"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rl_sure_exchange_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="确认兑换"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tv_sure_exchange_sure"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:background="@color/red"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:text="所需积分:"
+            android:textColor="@color/darkgray"
+            android:id="@+id/tv_goods_details_suoxujifen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:textSize="16dp"/>
+        <TextView
+            android:text="0"
+            android:textColor="@color/color_red"
+            android:id="@+id/tv_integral_goods_details_need"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:layout_toRightOf="@+id/tv_goods_details_suoxujifen"
+            android:textSize="16dp"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_sure_exchange_top"
+        android:layout_above="@+id/rl_sure_exchange_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imv_sure_exchange_pic"
+                    android:src="@drawable/pictures_err"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+                <TextView
+                    android:id="@+id/tv_sure_exchange_title"
+                    android:text="这是一条很长的标题"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5px"
+                android:background="@color/color_grey"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"/>
+            <RadioButton
+                android:text="使用默认收件人信息"
+                android:textColor="@color/color_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/rb_sure_exchange_default_message"
+                android:checked="true"/>
+
+            <TextView
+                android:textColor="@color/color_grey"
+                android:id="@+id/tv_sure_exchange_defalut_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/rb_sure_exchange_default_message"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="10dp" />
+
+            <RadioButton
+                android:text="使用新收件人信息"
+                android:textColor="@color/color_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="26dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/rb_sure_exchange_new_message"
+                android:checked="false"/>
+
+            <LinearLayout
+                android:id="@+id/ll_sure_exchange_new_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginRight="36dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:text="收货人姓名"
+                        android:textSize="16dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#a3a3a3"/>
+
+                    <EditText
+                        android:id="@+id/edt_sure_exchange_name"
+                        android:inputType="textPersonName"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:background="@drawable/into_etbg" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginRight="36dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:text="手机号码"
+                        android:textSize="16dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#a3a3a3"/>
+
+                    <EditText
+                        android:id="@+id/edt_sure_exchange_tel"
+                        android:inputType="phone"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:background="@drawable/into_etbg" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginRight="36dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:text="所属省市区"
+                        android:textSize="16dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#a3a3a3"/>
+
+                    <EditText
+                        android:id="@+id/edt_sure_exchange_city"
+                        android:inputType="textPersonName"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:background="@drawable/into_etbg" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginRight="36dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:text="详细地址"
+                        android:textSize="16dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#a3a3a3"/>
+
+                    <EditText
+                        android:id="@+id/edt_sure_exchange_address"
+                        android:inputType="textPersonName"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:background="@drawable/into_etbg" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

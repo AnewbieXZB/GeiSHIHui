@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/rl_main_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white">
+
+        <TextView
+            android:text="全部"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorLogo" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imv_top_left"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/sign"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/tv_top_right"
+            android:text="排序"
+            android:textColor="@color/color_grey"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--<ImageView-->
+            <!--android:id="@+id/imv_top_right"-->
+            <!--android:layout_width="36dp"-->
+            <!--android:layout_height="36dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:src="@drawable/order"-->
+            <!--android:layout_alignParentRight="true"/>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8px"
+            android:layout_alignParentBottom="true"
+            android:background="#EEE5DE"/>
+    </RelativeLayout>
+    <!--<LinearLayout-->
+        <!--android:weightSum="2"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<TextView-->
+                <!--android:gravity="center"-->
+                <!--android:id="@+id/tv_fragment_02_tag"-->
+                <!--android:background="@color/colorAccent"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+            <!--</TextView>-->
+        <!--</RelativeLayout>-->
+
+
+        <!--<RelativeLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent">-->
+        <!--<TextView-->
+            <!--android:gravity="center"-->
+            <!--android:id="@+id/tv_fragment_02_order"-->
+            <!--android:background="@color/saddlebrown"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+        <!--</TextView>-->
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+            android:id="@+id/gv_fragmen_02_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:layout_marginTop="10dp"
+            android:horizontalSpacing="8dp">
+
+        </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+
+        <ImageView
+
+            android:id="@+id/imv_fragmen_02_return_top"
+            android:src="@drawable/totop"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/color_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_register_back"
+            android:src="@drawable/back_"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:text="用户注册"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:text="请确保你的手机畅通，用于接收验证码短信"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="12dp"/>
+
+    <EditText
+        android:id="@+id/edt_register_phone"
+        android:inputType="phone"
+        android:textSize="16dp"
+        android:hint="请输入手机号码"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:background="@null"
+        android:enabled="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#EEE5DE"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+
+        <TextView
+            android:text="获取验证码"
+            android:textColor="#EEE5DE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_register_getcode"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true"
+            android:enabled="false"/>
+
+        <EditText
+            android:id="@+id/edt_register_code"
+            android:inputType="number"
+            android:textSize="16dp"
+            android:hint="请输入验证码"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:enabled="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#EEE5DE"/>
+
+    <Button
+        android:id="@+id/bt_register_sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/btn_gray"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:enabled="false"/>
+
+</LinearLayout>

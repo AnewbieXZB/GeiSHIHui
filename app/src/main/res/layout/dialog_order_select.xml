@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:background="@color/white">
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_dialog_volum_desc"
+                android:text="按销量由高到低排序"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/tv_dialog_volum_asc"
+                android:text="按销量由低到高排序"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5px"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_grey"/>
+
+            <TextView
+                android:id="@+id/tv_dialog_roll_desc"
+                android:text="按券后价由高到低排序"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/tv_dialog_roll_asc"
+                android:text="按券后价由低到高排序"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="20dp"/>
+        </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

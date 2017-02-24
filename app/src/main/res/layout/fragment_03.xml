@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/imv_fragment_03_search"
+            android:src="@drawable/find"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:padding="14dp"/>
+
+        <EditText
+            android:textColorHint="@color/color_guanjianzi"
+            android:hint="请输入要搜索的关键字"
+            android:layout_toLeftOf="@+id/imv_fragment_03_search"
+            android:background="@drawable/bg_edittext"
+            android:id="@+id/edt_fragment_03_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:padding="6dp"
+            android:textColor="@color/color_sousuojilu" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="@color/color_sousuojilu"
+        android:id="@+id/tv_fragment_03_history"
+        android:text="历史记录"
+        android:textSize="18dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/ll_fragment_03_history"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <TextView
+        android:textColor="@color/color_sousuojilu"
+        android:id="@+id/tv_fragment_03_hop"
+        android:text="别人都在搜"
+        android:textSize="18dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/ll_fragment_03_hot"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>
